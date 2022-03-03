@@ -41,7 +41,9 @@ Node Practices
   - 5-1) 코어 모듈(fs, os, ... node에서 제공해주는 모듈)
   - 5-2) 파일 모듈 : 파일 경로로 불러와서 모듈 안의 함수, 객체를 사용한다.
   - 5-3) npm 모듈 : npm을 통해서 node_module에 설치하고 사용하는 모듈
-  
+      - 원격 배포 
+      - 로컬 배포
+      
 
 
 #### 6. npmjs.com(npm registry)에 내 패키지 배포(생략, https://github.com/kickscar/javascript-practices/blob/main/TechNotes/javascript-practices/11.Development%20Environments/02.%20npm.md 보고 스스로)
