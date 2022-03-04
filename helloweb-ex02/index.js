@@ -3,7 +3,9 @@ const path = require('path');
 const express = require('express');
 
 const helloRouter = require('./routes/hello');
-const { nextTick } = require('process');
+const mainRouter = require('./routes/main');
+const userRouter = require('./routes/user');
+//const { nextTick } = require('process'); 이게 뭘까요?
 
 const port = 9090;
 
@@ -15,14 +17,18 @@ const application = express()
     .use(express.urlencoded({extended: true})) // application/x-www-form-urlencoded : tomcat
     .use(express.json())  // application/json : 
     // 3. view engine
+    .set('views',path.join(__dirname, "views"))
+    .set('view engine','ejs')
+
     // 4. request router
     .all('*',function(req, resp, next){
       resp.locals.req = req;
       resp.locals.resp = resp;
       next();
     })
-    .use('/hello', helloRouter);
-
+    .use('/', mainRouter)
+    .use('/hello', helloRouter)
+    .use('/user',userRouter);
 
 // Server SetUp
 http
