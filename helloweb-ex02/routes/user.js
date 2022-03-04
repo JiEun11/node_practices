@@ -22,7 +22,7 @@ router.route('/api').get(function(req, resp){
     no: 10,
     name: 'dooly',
     email: 'dooly@gmail.com',
-    gender: 'mali'
+    gender: 'male'
   };
 
   // resp.writeHead(200,{

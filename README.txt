@@ -37,17 +37,24 @@ Node Practices
     - $[project-ex02] npm init 만 하면 계속 물어보므로 npm init -y 사용 
 
 
-#### 5. Module
+5. Module
   - 5-1) 코어 모듈(fs, os, ... node에서 제공해주는 모듈)
   - 5-2) 파일 모듈 : 파일 경로로 불러와서 모듈 안의 함수, 객체를 사용한다.
   - 5-3) npm 모듈 : npm을 통해서 node_module에 설치하고 사용하는 모듈
       - 원격 배포 
       - 로컬 배포
-      
 
 
-#### 6. npmjs.com(npm registry)에 내 패키지 배포(생략, https://github.com/kickscar/javascript-practices/blob/main/TechNotes/javascript-practices/11.Development%20Environments/02.%20npm.md 보고 스스로)
+6. npmjs.com(npm registry)에 내 패키지 배포(생략, https://github.com/kickscar/javascript-practices/blob/main/TechNotes/javascript-practices/11.Development%20Environments/02.%20npm.md 보고 스스로)
+  -  과제는 아니지만 과제 ㅎ 
 
-#### 7. helloweb-ex01 (맨바닥)
 
-#### 8. helloweb-ex02 (express)
+7. helloweb-ex01  : 웹 애플리케이션 만들어보기(express framework X)
+  - core module 
+  - 7-1) app01: http : core module 기반  
+  - 7-2) app02: http, fs : core module 기반 
+  - 7-3) app03: connect, serve-stsatic: npm package 기반
+  - 7-4) app04: connect, serve-static, connect-route: npm package 기반
+
+
+8. helloweb-ex02 : 웹 애플리케이션 만들어보기(express framework O)
